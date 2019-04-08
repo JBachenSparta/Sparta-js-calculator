@@ -2,10 +2,10 @@
 var settings = prompt ("Which calculator setting would you like? \r\nPlease select from and input: \r\n\(a) Advanced \r\n\(b) Basic \r\n(c) Body Mass Indicator").toLowerCase();
 // seletion of which calucator function to use
 if (settings == "a" || settings == "b" || settings =="c"){
-  alert("Excellent selection")
+  alert("Excellent selection");
 }
 else {
-  alert("That is an invalid selection, please reload the page")
+  alert("That is an invalid selection, please reload the page");
 }
 
 //advanced calculations
@@ -17,16 +17,16 @@ if (settings == "a") {
     var advancedPower = parseInt(prompt ("Enter base number"));
     var advancedBase = parseInt(prompt ("Enter exponent"));
     var powerOutput = advancedPower ** advancedBase;
-    alert(powerOutput)
+    alert("Your answer is " + powerOutput);
     }
     else if (advancedOperation == 2){
       var radicand = parseInt(prompt ("Enter radicand"));
       var index = parseInt(prompt ("Enter index"));
       var rootOutput = radicand ** (1/index);
-      alert(rootOutput)
+      alert("Your answer is " +rootOutput.toFixed(3));
     }
     else {
-      alert ("incorrect selection please try again")
+      alert ("incorrect selection please try again");
       advancedOperation();
     }
   }
@@ -44,15 +44,15 @@ else if (settings == "b") {
   }
   else if (basicOperation == "-") {
     var output = basicInput1 - basicInput2;
-    alert ("Your answer is " + output)
+    alert ("Your answer is " + output);
   }
   else if (basicOperation == "/") {
     var output = basicInput1 / basicInput2;
-    alert ("Your answer is " + output)
+    alert ("Your answer is " + output);
   }
   else if (basicOperation == "*") {
     var output = basicInput1 * basicInput2;
-    alert ("Your answer is " + output)
+    alert ("Your answer is " + output);
   }
 }
 
